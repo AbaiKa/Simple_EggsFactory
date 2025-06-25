@@ -24,7 +24,7 @@ public class PlatformManager : MonoBehaviour
         }
 
         Spawn(defaultPlatform);
-        Spawn("basic_1");
+        Spawn("platform_2");
     }
 
     public void Spawn(string id)

@@ -436,7 +436,7 @@ MonoBehaviour:
   - {fileID: 3130619093449346612, guid: e07b970648e505d4baef8ff0c921ba24, type: 3}
   - {fileID: 3130619093449346612, guid: 8495012fd5a77d141aeab94a6edbbc41, type: 3}
   - {fileID: 3130619093449346612, guid: 34cea726e29cd2c44a201ac0913900cb, type: 3}
-  defaultSpawnPoint: {x: 4, y: 3}
+  defaultSpawnPoint: {x: -3.8, y: 3}
 --- !u!1 &1701457636
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,12 +481,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f9e1464b0d679419e76d546b6da6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultPlatform: basic
-  spawnOffset: 2
+  defaultPlatform: platform_1
+  spawnOffset: 1.65
   container: {fileID: 1701457637}
   prefabs:
-  - {fileID: 3345277225572542943, guid: f41fc8a654d8bc64ebd832e18b1c6fe0, type: 3}
-  - {fileID: 3345277225572542943, guid: e1746d26106b5e942a8970942fda9d11, type: 3}
+  - {fileID: 1340118955245646321, guid: 258d7c89675f0724cb17841333becb7d, type: 3}
+  - {fileID: 3035073860893736406, guid: 0e422544eae6a074680a3f1b70d993a2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
