@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 420752292573612925}
   - component: {fileID: 5070836652202096984}
   - component: {fileID: 3140087172268892489}
-  - component: {fileID: 5575768259056232701}
   - component: {fileID: 3130619093449346612}
+  - component: {fileID: 1145166797777368413}
   m_Layer: 6
-  m_Name: Triangle 2
+  m_Name: Triangle 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -117,7 +117,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &5575768259056232701
+--- !u!114 &3130619093449346612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616806375065539152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324535e0a6674de4595982005811fa71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: basic_5
+  <NextID>k__BackingField: 
+  <Cost>k__BackingField: 5
+  rigidbodyComponent: {fileID: 3140087172268892489}
+--- !u!60 &1145166797777368413
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,19 +183,3 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &3130619093449346612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8616806375065539152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324535e0a6674de4595982005811fa71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <ID>k__BackingField: basic_2
-  <NextID>k__BackingField: basic_3
-  <Cost>k__BackingField: 5
-  rigidbodyComponent: {fileID: 3140087172268892489}

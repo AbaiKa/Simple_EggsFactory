@@ -436,6 +436,9 @@ MonoBehaviour:
   - {fileID: 3130619093449346612, guid: e07b970648e505d4baef8ff0c921ba24, type: 3}
   - {fileID: 3130619093449346612, guid: 8495012fd5a77d141aeab94a6edbbc41, type: 3}
   - {fileID: 3130619093449346612, guid: 34cea726e29cd2c44a201ac0913900cb, type: 3}
+  - {fileID: 3130619093449346612, guid: 5bf029de0dd34d4429c426c9304f5115, type: 3}
+  - {fileID: 3130619093449346612, guid: 775c88f86a523944db0410384cbd32e1, type: 3}
+  - {fileID: 3130619093449346612, guid: 9e7fc5b6e4af0ba459a3b816419cbe5f, type: 3}
   defaultSpawnPoint: {x: -3.8, y: 3}
 --- !u!1 &1701457636
 GameObject:
@@ -463,7 +466,7 @@ Transform:
   m_GameObject: {fileID: 1701457636}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -488,6 +491,8 @@ MonoBehaviour:
   - {fileID: 1340118955245646321, guid: 258d7c89675f0724cb17841333becb7d, type: 3}
   - {fileID: 3035073860893736406, guid: 0e422544eae6a074680a3f1b70d993a2, type: 3}
   - {fileID: 3128582016095793704, guid: 2852bd162a5a6b44d8f6cd34d11af3f0, type: 3}
+  - {fileID: 1596516787224548742, guid: 4a7e80e18c241ed48817a4cef5509e41, type: 3}
+  - {fileID: 3552713377224234570, guid: 775b05809c64da64592a3263ffd3851b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
