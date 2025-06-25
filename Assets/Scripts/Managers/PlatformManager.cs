@@ -25,6 +25,7 @@ public class PlatformManager : MonoBehaviour
 
         Spawn(defaultPlatform);
         Spawn("platform_2");
+        Spawn("platform_3");
     }
 
     public void Spawn(string id)
