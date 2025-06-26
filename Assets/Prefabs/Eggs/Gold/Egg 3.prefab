@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 420752292573612925}
   - component: {fileID: 5070836652202096984}
   - component: {fileID: 3140087172268892489}
+  - component: {fileID: 5575768259056232701}
   - component: {fileID: 3130619093449346612}
-  - component: {fileID: 5247103309690204151}
   m_Layer: 6
-  m_Name: Triangle
+  m_Name: Egg 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 4085683703190737403, guid: 5e4a584de49d5cc4eb2c07deb52f222f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -117,22 +117,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3130619093449346612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8616806375065539152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324535e0a6674de4595982005811fa71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <ID>k__BackingField: basic
-  <NextID>k__BackingField: basic_1
-  rigidbodyComponent: {fileID: 3140087172268892489}
---- !u!60 &5247103309690204151
+--- !u!60 &5575768259056232701
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,7 +155,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.77, y: 0.95}
+    oldSize: {x: 1.54, y: 1.9}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -208,3 +193,18 @@ PolygonCollider2D:
       - {x: 0.235, y: -0.415}
       - {x: 0.32, y: -0.32}
   m_UseDelaunayMesh: 0
+--- !u!114 &3130619093449346612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616806375065539152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324535e0a6674de4595982005811fa71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: gold_3
+  <NextID>k__BackingField: gold_4
+  rigidbodyComponent: {fileID: 3140087172268892489}

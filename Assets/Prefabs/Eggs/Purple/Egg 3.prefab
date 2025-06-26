@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5575768259056232701}
   - component: {fileID: 3130619093449346612}
   m_Layer: 6
-  m_Name: Triangle 1
+  m_Name: Egg 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -7420973913166234234, guid: faf7511382490f14c817591b1b905c5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -155,7 +155,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.77, y: 0.95}
+    oldSize: {x: 1.55, y: 1.9}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -205,6 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324535e0a6674de4595982005811fa71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ID>k__BackingField: basic_1
-  <NextID>k__BackingField: basic_2
+  <ID>k__BackingField: purple_3
+  <NextID>k__BackingField: purple_4
   rigidbodyComponent: {fileID: 3140087172268892489}

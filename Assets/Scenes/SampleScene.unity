@@ -1072,7 +1072,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 4085683703190737403, guid: 5e4a584de49d5cc4eb2c07deb52f222f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1914,11 +1914,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
-  income: 0
-  price: 0
-  eggPerSecond: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  id: purple
+  income: 100
+  price: 500
+  eggPerSecond: 0.8
+  color: {r: 0.7607843, g: 0.29803923, b: 1, a: 1}
   progressBar: {fileID: 1359918165}
   incomeText: {fileID: 419588137}
   priceText: {fileID: 1462336492}
@@ -1985,7 +1985,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 5864301481019967186, guid: 44511412ce02aa64f955b026f82b6968, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3535,7 +3535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -7420973913166234234, guid: faf7511382490f14c817591b1b905c5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3610,7 +3610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -2062831619705498860, guid: 5733ced6e5efe8241ad8a25b062b50ae, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4755,11 +4755,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
-  income: 0
-  price: 0
-  eggPerSecond: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  id: blue
+  income: 900
+  price: 10000
+  eggPerSecond: 0.5
+  color: {r: 0, g: 0.3137255, b: 1, a: 1}
   progressBar: {fileID: 1049675602}
   incomeText: {fileID: 519532709}
   priceText: {fileID: 885036298}
@@ -6089,7 +6089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -6533463594116086510, guid: 248ce14e589ae9a48b67c2402b88777d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6338,7 +6338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 6767678442577006203, guid: 38c3f2e4017530748a61cd3c7a40cfd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6601,11 +6601,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
-  income: 0
-  price: 0
-  eggPerSecond: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  id: gold
+  income: 1800000
+  price: 19200000
+  eggPerSecond: 0.05
+  color: {r: 1, g: 0.8352941, b: 0, a: 1}
   progressBar: {fileID: 1744442005}
   incomeText: {fileID: 1788344354}
   priceText: {fileID: 1757898531}
@@ -6978,9 +6978,9 @@ MonoBehaviour:
   - {fileID: 600490032}
   - {fileID: 861011383}
   - {fileID: 1199863853}
-  - {fileID: 800488221}
-  - {fileID: 1198978613}
   - {fileID: 1192998878}
+  - {fileID: 1198978613}
+  - {fileID: 800488221}
 --- !u!4 &846552833
 Transform:
   m_ObjectHideFlags: 0
@@ -7204,11 +7204,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
-  income: 0
-  price: 0
-  eggPerSecond: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  id: pink
+  income: 4500
+  price: 55000
+  eggPerSecond: 0.4
+  color: {r: 1, g: 0.227451, b: 1, a: 1}
   progressBar: {fileID: 479510889}
   incomeText: {fileID: 137002982}
   priceText: {fileID: 1939607191}
@@ -8251,7 +8251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 6767678442577006203, guid: 38c3f2e4017530748a61cd3c7a40cfd5, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8678,12 +8678,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
+  - {fileID: 3130619093449346612, guid: 02c75763185db764c876906322dc36f0, type: 3}
+  - {fileID: 3130619093449346612, guid: 8c256d46e9ad4c94597444a96f9c09e8, type: 3}
+  - {fileID: 3130619093449346612, guid: 01e5228d2788f6f48aefab43e3f76ff3, type: 3}
+  - {fileID: 3130619093449346612, guid: f8f45d46fd7e8b74a8fe7cd98758fdd6, type: 3}
+  - {fileID: 3130619093449346612, guid: 5fc2b0431234afc48b4e3a0f9e950b3d, type: 3}
+  - {fileID: 3130619093449346612, guid: 014b4a9383666b44ea7f2ceb704c99d3, type: 3}
+  - {fileID: 3130619093449346612, guid: 859e9d9fd4e09114aa95562a4ec0cae7, type: 3}
+  - {fileID: 3130619093449346612, guid: e01a3601284de404b8c7814cc2a6e1f4, type: 3}
+  - {fileID: 3130619093449346612, guid: b019c29ea1914c9428043a7bef55a956, type: 3}
+  - {fileID: 3130619093449346612, guid: b696f7bf32c4f7c4e84bd92ccdfda76c, type: 3}
+  - {fileID: 3130619093449346612, guid: 3ecb650afa5123f498360aa78e49e8dd, type: 3}
+  - {fileID: 3130619093449346612, guid: d5c541094ef9efd4e931afe4f000dacc, type: 3}
+  - {fileID: 3130619093449346612, guid: f44d6cd540574bc4ca91dcea32c5b3b4, type: 3}
+  - {fileID: 3130619093449346612, guid: 51377275453801f4ab2112ad39fd4e37, type: 3}
+  - {fileID: 3130619093449346612, guid: 6e96cb8c04d53c84784b0854453e4033, type: 3}
+  - {fileID: 3130619093449346612, guid: 857d70f966398d14ebef360a8fa8390f, type: 3}
+  - {fileID: 3130619093449346612, guid: 2b309d37e31462d4e915184c2ab9afe0, type: 3}
+  - {fileID: 3130619093449346612, guid: 5e47426af7f0f154ead077ad394b6c0b, type: 3}
+  - {fileID: 3130619093449346612, guid: 9d3774690b6aed54daa424adf1e28d08, type: 3}
+  - {fileID: 3130619093449346612, guid: d343a2c8bcdc2dc49897584abe65fc66, type: 3}
+  - {fileID: 3130619093449346612, guid: 4f1f9709b9c2b64439c1144eb2ff0ca8, type: 3}
+  - {fileID: 3130619093449346612, guid: ae3e38f2c29ca6c4682607a34f4ab34a, type: 3}
+  - {fileID: 3130619093449346612, guid: 1785a2f8263651149b8cd8a62ab055ab, type: 3}
+  - {fileID: 3130619093449346612, guid: c724eade2c9694942a065d1ffadc0178, type: 3}
+  - {fileID: 3130619093449346612, guid: cfa24cee501734d46a8526108dc85581, type: 3}
+  - {fileID: 3130619093449346612, guid: 95df6b8513b1d334f870deb5c153b900, type: 3}
+  - {fileID: 3130619093449346612, guid: a18b47e2ca866794796590ec3f1f1bfb, type: 3}
+  - {fileID: 3130619093449346612, guid: 7c7c441eedbfccb46818f801d143e773, type: 3}
+  - {fileID: 3130619093449346612, guid: 6127632d51ac18c47b80d97824b5413b, type: 3}
+  - {fileID: 3130619093449346612, guid: 01869a81c6851434fb246e8df2321857, type: 3}
+  - {fileID: 3130619093449346612, guid: 7e5c789e389d0d8448d2abde437a24de, type: 3}
+  - {fileID: 3130619093449346612, guid: bc327065395afeb42b4f6c2917c1871d, type: 3}
+  - {fileID: 3130619093449346612, guid: f6d39f38f08eef94bb8e27f60a90042d, type: 3}
+  - {fileID: 3130619093449346612, guid: 43a6b6481c407294e9e8f9881e271dd8, type: 3}
+  - {fileID: 3130619093449346612, guid: 2d898a8b22306f4469a6a52b36c8de33, type: 3}
+  - {fileID: 3130619093449346612, guid: c11e6124674bb2c4a92d95d49a21c719, type: 3}
+  - {fileID: 3130619093449346612, guid: 1d06064f9d7e49c43b42376353701609, type: 3}
+  - {fileID: 3130619093449346612, guid: 34413d5e2eafb2e48af25e2cdb4ee0d5, type: 3}
+  - {fileID: 3130619093449346612, guid: 713636fa3360a6d47a16b8c3bbd8558b, type: 3}
+  - {fileID: 3130619093449346612, guid: 79d2e93ea7b93c1439361d40024c8134, type: 3}
+  - {fileID: 3130619093449346612, guid: f9fffb26cc268b24189e1578f2922bf1, type: 3}
+  - {fileID: 3130619093449346612, guid: 22513f8ecd2cf1747abb1e7229bb7c89, type: 3}
   - {fileID: 3130619093449346612, guid: e07b970648e505d4baef8ff0c921ba24, type: 3}
   - {fileID: 3130619093449346612, guid: 8495012fd5a77d141aeab94a6edbbc41, type: 3}
   - {fileID: 3130619093449346612, guid: 34cea726e29cd2c44a201ac0913900cb, type: 3}
   - {fileID: 3130619093449346612, guid: 5bf029de0dd34d4429c426c9304f5115, type: 3}
   - {fileID: 3130619093449346612, guid: 775c88f86a523944db0410384cbd32e1, type: 3}
   - {fileID: 3130619093449346612, guid: 9e7fc5b6e4af0ba459a3b816419cbe5f, type: 3}
+  - {fileID: 3130619093449346612, guid: 9eabfd9fdc3072c42959fb6b28d280dd, type: 3}
+  - {fileID: 3130619093449346612, guid: 7878d553771beba45baa63775342fa15, type: 3}
+  - {fileID: 3130619093449346612, guid: 566cbb14caa759f46b26e83aa19610ec, type: 3}
+  - {fileID: 3130619093449346612, guid: 8312055602f77c64da5c96c8ede44771, type: 3}
+  - {fileID: 3130619093449346612, guid: 986d87626f6dab941b88b771c80ddbbf, type: 3}
+  - {fileID: 3130619093449346612, guid: 3ad35f5c48f998647b21eb7eca977512, type: 3}
   defaultSpawnPoint: {x: -5.5, y: 4}
 --- !u!1 &1175123461
 GameObject:
@@ -8794,11 +8842,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
-  income: 0
-  price: 0
-  eggPerSecond: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  id: red
+  income: 90000
+  price: 1200000
+  eggPerSecond: 0.2
+  color: {r: 1, g: 0, b: 0, a: 1}
   progressBar: {fileID: 1959549280}
   incomeText: {fileID: 467170734}
   priceText: {fileID: 1054638644}
@@ -8880,11 +8928,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
-  income: 0
-  price: 0
-  eggPerSecond: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  id: grey
+  income: 450000
+  price: 4800000
+  eggPerSecond: 0.1
+  color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
   progressBar: {fileID: 2028888482}
   incomeText: {fileID: 1506589726}
   priceText: {fileID: 783387046}
@@ -8966,11 +9014,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
-  income: 0
-  price: 0
-  eggPerSecond: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  id: green
+  income: 18000
+  price: 240000
+  eggPerSecond: 0.3
+  color: {r: 0.11099124, g: 1, b: 0, a: 1}
   progressBar: {fileID: 1962556198}
   incomeText: {fileID: 343243116}
   priceText: {fileID: 1711282395}
@@ -9052,11 +9100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
-  income: 0
-  price: 0
-  eggPerSecond: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  id: cyan
+  income: 300
+  price: 2500
+  eggPerSecond: 0.6
+  color: {r: 0, g: 1, b: 1, a: 1}
   progressBar: {fileID: 328047391}
   incomeText: {fileID: 923684133}
   priceText: {fileID: 506798275}
@@ -9124,7 +9172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -721639144594169954, guid: c83eeae96a239c64396bca03fa5f10a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9546,7 +9594,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -2062831619705498860, guid: 5733ced6e5efe8241ad8a25b062b50ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9658,7 +9706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 7077762142516226614, guid: 3aff1b2569543834f93932c097f08e23, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9809,7 +9857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -7420973913166234234, guid: faf7511382490f14c817591b1b905c5f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10368,9 +10416,9 @@ RectTransform:
   - {fileID: 600490030}
   - {fileID: 861011381}
   - {fileID: 1199863851}
-  - {fileID: 800488219}
-  - {fileID: 1198978611}
   - {fileID: 1192998876}
+  - {fileID: 1198978611}
+  - {fileID: 800488219}
   m_Father: {fileID: 282565104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -11975,7 +12023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 5864301481019967186, guid: 44511412ce02aa64f955b026f82b6968, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12434,7 +12482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 4085683703190737403, guid: 5e4a584de49d5cc4eb2c07deb52f222f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13242,10 +13290,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7dfc24ea7d10246a8c6fbed8830995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: basic
-  income: 15
+  id: white
+  income: 20
   price: 50
-  eggPerSecond: 0.4
+  eggPerSecond: 1
   color: {r: 1, g: 1, b: 1, a: 1}
   progressBar: {fileID: 2095086131}
   incomeText: {fileID: 847029888}
@@ -13704,7 +13752,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -1937561181017713802, guid: f299bce58584b3842aff2d0a12ea24be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14408,7 +14456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -6533463594116086510, guid: 248ce14e589ae9a48b67c2402b88777d, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14483,7 +14531,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: -721639144594169954, guid: c83eeae96a239c64396bca03fa5f10a6, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14793,7 +14841,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
+  m_Sprite: {fileID: 7077762142516226614, guid: 3aff1b2569543834f93932c097f08e23, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

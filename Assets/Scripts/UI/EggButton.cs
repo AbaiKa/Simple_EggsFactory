@@ -72,7 +72,6 @@ public class EggButton : MonoBehaviour
         priceText.color = money >= currentPrice ? Color.white : Color.red;
         priceText.text = NumberFormatter.Format(currentPrice);
         var color = money >= currentPrice ? Color.white : Color.red;
-        Debug.Log($"Price: {currentPrice} Money: {money} Color: {color}");
     }
     private void UpdateValues()
     {
