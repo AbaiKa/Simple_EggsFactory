@@ -16,7 +16,9 @@ public class FillerTrapComponent : MonoBehaviour
         if (collider != null && collider.TryGetComponent(out EggComponent egg))
         {
             var pos = new Vector3(egg.transform.position.x, egg.transform.position.y + 0.25f);
-            manager.Spawn(egg.NextID, EggStatus.Sliced, (int)(egg.Cost * multiplier), pos, 1);
+            int cost = (int)(egg.Cost * multiplier);
+            int exp = (int)(egg.Exp * multiplier);
+            manager.Spawn(egg.NextID, EggStatus.Sliced, cost, exp, pos, 1);
         }
     }
 }

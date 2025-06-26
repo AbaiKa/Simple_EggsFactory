@@ -8,6 +8,7 @@ public class EggButton : MonoBehaviour
     [Header("Properties")]
     [SerializeField] private string id;
     [SerializeField] private int income;
+    [SerializeField] private int exp;
     [SerializeField] private int price;
     [SerializeField] private float eggPerSecond;
     [SerializeField] private Color color;
@@ -54,7 +55,7 @@ public class EggButton : MonoBehaviour
         if (elapsedTime > interval)
         {
             elapsedTime = 0;
-            egg.Spawn(id, EggStatus.Whole, income);
+            egg.Spawn(id, EggStatus.Whole, income, exp);
         }
 
         progressBar.fillAmount = elapsedTime / interval;

@@ -6,23 +6,32 @@ public class UIManager : MonoBehaviour
 {
     [Header("Components")]
     [SerializeField] private TextMeshProUGUI coinsText;
+    [SerializeField] private TextMeshProUGUI expText;
     [SerializeField] private Button upgradeButton;
+    [SerializeField] private UpgradePanel upgradePanel;
     [SerializeField] private EggButton[] eggButtons;
 
+    private EggManager eggManager;
+    private PlayerManager playerManager;
+    private UpgradeManager upgradeManager;
     public void Init()
     {
-        var egg = FindFirstObjectByType<EggManager>();
-        var player = FindFirstObjectByType<PlayerManager>();
-        var upgrade = FindFirstObjectByType<UpgradeManager>();
+        eggManager = FindFirstObjectByType<EggManager>();
+        playerManager = FindFirstObjectByType<PlayerManager>();
+        upgradeManager = FindFirstObjectByType<UpgradeManager>();
 
         for(int i = 0; i < eggButtons.Length; i++)
         {
-            eggButtons[i].Init(egg, upgrade, player);
+            eggButtons[i].Init(eggManager, upgradeManager, playerManager);
             eggButtons[i].SetActive(i == 0);
             eggButtons[i].onBuy.AddListener(UpdateButtons);
         }
 
-        player.onMoneyChanged.AddListener(UpdateCoins);
+        upgradePanel.Init(playerManager, upgradeManager);
+
+        playerManager.onMoneyChanged.AddListener(UpdateCoins);
+        upgradeManager.onExpChanged.AddListener(UpdateExp);
+        UpdateExp(upgradeManager.GetExpt());
     }
 
     private void UpdateButtons()
@@ -36,5 +45,18 @@ public class UIManager : MonoBehaviour
     private void UpdateCoins(int money)
     {
         coinsText.text = NumberFormatter.Format(money);
+    }
+
+    private void UpdateExp(int exp)
+    {
+        int level = playerManager.GetUpgradeLevel("upgrade");
+        int target = upgradeManager.GetExpLevelValue(level);
+        expText.text = $"exp {exp}/{target}";
+        if (exp >= target)
+        {
+            playerManager.Upgrade("upgrade");
+            playerManager.AddExp(Random.Range(3 * level + 1, 6 * level + 1));
+            upgradeManager.ResetExp();
+        }
     }
 }

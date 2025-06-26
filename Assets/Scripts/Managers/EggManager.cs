@@ -20,23 +20,23 @@ public class EggManager : MonoBehaviour
             }
         }
     }
-    public void Spawn(string id, EggStatus status, int cost)
+    public void Spawn(string id, EggStatus status, int cost, int exp)
     {
-        Spawn(id, status, cost, defaultSpawnPoint);
+        Spawn(id, status, cost, exp, defaultSpawnPoint);
     }
-    public void Spawn(string id, EggStatus status, int cost, int count)
+    public void Spawn(string id, EggStatus status, int cost, int exp, int count)
     {
-        Spawn(id, status, cost, defaultSpawnPoint, count);
+        Spawn(id, status, cost, exp, defaultSpawnPoint, count);
     }
-    public void Spawn(string id, EggStatus status, int cost, Vector2 position)
+    public void Spawn(string id, EggStatus status, int cost, int exp, Vector2 position)
     {
         if (eggs.ContainsKey(id))
         {
-            var egg = Spawn(eggs[id], status, cost);
+            var egg = Spawn(eggs[id], status, cost, exp);
             egg.transform.position = position;
         }
     }
-    public void Spawn(string id, EggStatus status, int cost, Vector2 position, int count)
+    public void Spawn(string id, EggStatus status, int cost, int exp, Vector2 position, int count)
     {
         if (eggs.ContainsKey(id))
         {
@@ -45,16 +45,16 @@ public class EggManager : MonoBehaviour
 
             for (int i = 0; i < count; i++)
             {
-                var egg = Spawn(eggs[id], status, cost);
+                var egg = Spawn(eggs[id], status, cost, exp);
                 float x = startX + i * offset;
                 egg.transform.position = new Vector3(x, position.y, 0f);
             }
         }
     }
-    private EggComponent Spawn(EggComponent prefab, EggStatus status, int cost)
+    private EggComponent Spawn(EggComponent prefab, EggStatus status, int cost, int exp)
     {
         var egg = Instantiate(prefab);
-        egg.Init(status, cost);
+        egg.Init(status, cost, exp);
         return egg;
     }
 
