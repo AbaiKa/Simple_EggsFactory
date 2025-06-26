@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -20,34 +19,24 @@ public class EggManager : MonoBehaviour
                 eggs.Add(prefabs[i].ID, prefabs[i]);
             }
         }
-
-        StartCoroutine(SpawnRoutine());
     }
-    private IEnumerator SpawnRoutine()
+    public void Spawn(string id, EggStatus status, int cost)
     {
-        while (true)
-        {
-            Spawn("basic", EggStatus.Whole);
-            yield return new WaitForSeconds(Random.Range(2, 4));
-        }
+        Spawn(id, status, cost, defaultSpawnPoint);
     }
-    public void Spawn(string id, EggStatus status)
+    public void Spawn(string id, EggStatus status, int cost, int count)
     {
-        Spawn(id, status, defaultSpawnPoint);
+        Spawn(id, status, cost, defaultSpawnPoint, count);
     }
-    public void Spawn(string id, EggStatus status, int count)
-    {
-        Spawn(id, status, defaultSpawnPoint, count);
-    }
-    public void Spawn(string id, EggStatus status, Vector2 position)
+    public void Spawn(string id, EggStatus status, int cost, Vector2 position)
     {
         if (eggs.ContainsKey(id))
         {
-            var egg = Spawn(eggs[id], status);
+            var egg = Spawn(eggs[id], status, cost);
             egg.transform.position = position;
         }
     }
-    public void Spawn(string id, EggStatus status, Vector2 position, int count)
+    public void Spawn(string id, EggStatus status, int cost, Vector2 position, int count)
     {
         if (eggs.ContainsKey(id))
         {
@@ -56,16 +45,16 @@ public class EggManager : MonoBehaviour
 
             for (int i = 0; i < count; i++)
             {
-                var egg = Spawn(eggs[id], status);
+                var egg = Spawn(eggs[id], status, cost);
                 float x = startX + i * offset;
                 egg.transform.position = new Vector3(x, position.y, 0f);
             }
         }
     }
-    private EggComponent Spawn(EggComponent prefab, EggStatus status)
+    private EggComponent Spawn(EggComponent prefab, EggStatus status, int cost)
     {
         var egg = Instantiate(prefab);
-        egg.Init(status);
+        egg.Init(status, cost);
         return egg;
     }
 

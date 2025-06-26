@@ -5,13 +5,14 @@ public class EggComponent : MonoBehaviour
     [field: Header("Properties")]
     [field: SerializeField] public string ID { get; private set; }
     [field: SerializeField] public string NextID { get; private set; }
-    [field: SerializeField] public float Cost { get; private set; }
+    public int Cost { get; private set; }
     [Header("Components")]
     [SerializeField] private Rigidbody2D rigidbodyComponent;
 
     public EggStatus Status { get; private set; }
-    public void Init(EggStatus status)
+    public void Init(EggStatus status, int cost)
     {
+        Cost = cost;
         SetStatus(status);
     }
     public void DeInit()

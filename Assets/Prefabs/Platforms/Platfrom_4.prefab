@@ -1410,6 +1410,7 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 64
+  multiplier: 7
 --- !u!1 &8490933018079917602
 GameObject:
   m_ObjectHideFlags: 0

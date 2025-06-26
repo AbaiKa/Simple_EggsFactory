@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 8066805291893447923, guid: 8f8284049ccfeb54cb6a7b3a3d6f769d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -154,8 +154,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.77, y: 0.95}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -163,9 +163,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
+    - - {x: 0.35, y: -0.26}
+      - {x: 0.38, y: -0.19}
+      - {x: 0.385, y: -0.08}
+      - {x: 0.385, y: -0.04}
+      - {x: 0.38, y: 0}
+      - {x: 0.36499998, y: 0.095}
+      - {x: 0.295, y: 0.255}
+      - {x: 0.22, y: 0.355}
+      - {x: 0.145, y: 0.42499998}
+      - {x: 0.074999996, y: 0.47}
+      - {x: 0.035, y: 0.475}
+      - {x: -0.044999998, y: 0.475}
+      - {x: -0.085, y: 0.45999998}
+      - {x: -0.13, y: 0.44}
+      - {x: -0.22, y: 0.355}
+      - {x: -0.26, y: 0.31}
+      - {x: -0.34, y: 0.16}
+      - {x: -0.375, y: 0.02}
+      - {x: -0.385, y: -0.049999997}
+      - {x: -0.385, y: -0.17}
+      - {x: -0.36499998, y: -0.24499999}
+      - {x: -0.305, y: -0.345}
+      - {x: -0.225, y: -0.42}
+      - {x: -0.16499999, y: -0.45999998}
+      - {x: -0.11, y: -0.475}
+      - {x: 0.099999994, y: -0.475}
+      - {x: 0.13499999, y: -0.465}
+      - {x: 0.235, y: -0.415}
+      - {x: 0.32, y: -0.32}
   m_UseDelaunayMesh: 0
 --- !u!114 &3130619093449346612
 MonoBehaviour:
@@ -181,5 +207,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: basic_3
   <NextID>k__BackingField: basic_4
-  <Cost>k__BackingField: 5
   rigidbodyComponent: {fileID: 3140087172268892489}

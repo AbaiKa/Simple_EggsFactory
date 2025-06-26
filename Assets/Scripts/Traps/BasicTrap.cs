@@ -9,7 +9,7 @@ public class BasicTrap : ATrap
         if (count != 0)
         {
             var pos = new Vector3(egg.transform.position.x, egg.transform.position.y + 0.25f);
-            manager.Spawn(egg.NextID, EggStatus.Sliced, pos, count);
+            manager.Spawn(egg.NextID, EggStatus.Sliced, egg.Cost, pos, count);
         }
         egg.DeInit();
     }
