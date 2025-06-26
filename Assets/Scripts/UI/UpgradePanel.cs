@@ -18,6 +18,7 @@ public class UpgradePanel : MonoBehaviour
 
     private PlayerManager playerManager;
     private UpgradeManager upgradeManager;
+    private PlatformManager platformManager;
 
     private int currentPrice;
     private UpgradeButton currentUpgrade;
@@ -25,6 +26,7 @@ public class UpgradePanel : MonoBehaviour
     {
         playerManager = player;
         upgradeManager = upgrade;
+        platformManager = FindFirstObjectByType<PlatformManager>();
 
         showButton.onClick.AddListener(Show);
         hideButton.onClick.AddListener(Hide);
@@ -52,6 +54,14 @@ public class UpgradePanel : MonoBehaviour
         upgradeValueText.text = $"Current bonus <color=green>{upgrade}</color>";
         currentPrice = upgradeManager.GetUpgradePrice(currentUpgrade.Price, level);
         buyText.text = $"Buy <color=green>{currentPrice}</color>";
+
+        for (int i = 0; i < upgradeButtons.Length; i++)
+        {
+            int l = playerManager.GetUpgradeLevel(upgradeButtons[i].ID);
+            int price = upgradeManager.GetUpgradePrice(upgradeButtons[i].Price, l);
+            string text = $"Lvl. {l + 1} <color=#00D3FF>{price}</color>";
+            upgradeButtons[i].UpdateItem(text);
+        }
     }
     private void Show()
     {
@@ -60,14 +70,6 @@ public class UpgradePanel : MonoBehaviour
         levelText.text = $"Level {playerManager.GetUpgradeLevel("upgrade") + 1}";
         expText.text = $"Points {playerManager.GetExp()}";
         UpdateDescription();
-
-        for (int i = 0; i < upgradeButtons.Length; i++)
-        {
-            int level = playerManager.GetUpgradeLevel(upgradeButtons[i].ID);
-            int price = upgradeManager.GetUpgradePrice(upgradeButtons[i].Price, level);
-            string text = $"Lvl. {level + 1} <color=#00D3FF>{price}</color>";
-            upgradeButtons[i].UpdateItem(text);
-        }
     }
     private void Hide()
     {
@@ -78,7 +80,17 @@ public class UpgradePanel : MonoBehaviour
         if (playerManager.SpendExp(currentPrice))
         {
             playerManager.Upgrade(currentUpgrade.ID);
+            SwitchUpgrade(currentUpgrade.ID);
             UpdateDescription();
+            expText.text = $"Points {playerManager.GetExp()}";
+        }
+    }
+
+    private void SwitchUpgrade(string id)
+    {
+        if (id.Equals("platform"))
+        {
+            platformManager.SpawnNext();
         }
     }
 }

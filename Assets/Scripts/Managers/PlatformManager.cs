@@ -24,12 +24,11 @@ public class PlatformManager : MonoBehaviour
         }
 
         Spawn(defaultPlatform);
-        Spawn("platform_2");
-        Spawn("platform_3");
-        Spawn("platform_4");
-        Spawn("platform_5");
     }
-
+    public void SpawnNext()
+    {
+        Spawn($"platform_{platforms.Count + 1}");
+    }
     public void Spawn(string id)
     {
         if (platformsPrefab.ContainsKey(id))
