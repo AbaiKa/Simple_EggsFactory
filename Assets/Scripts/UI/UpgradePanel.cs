@@ -40,6 +40,17 @@ public class UpgradePanel : MonoBehaviour
 
         Hide();
     }
+    public UpgradeButton GetUpgradeButton(string id)
+    {
+        for (int i = 0; i < upgradeButtons.Length; i++)
+        {
+            if (upgradeButtons[i].ID.Equals(id))
+            {
+                return upgradeButtons[i];
+            }
+        }
+        return null;
+    }
     private void OnSelectUpgrade(UpgradeButton upgrade)
     {
         currentUpgrade = upgrade;
@@ -52,14 +63,23 @@ public class UpgradePanel : MonoBehaviour
         int level = playerManager.GetUpgradeLevel(currentUpgrade.ID);
         int upgrade = level * currentUpgrade.Value;
         upgradeValueText.text = $"Current bonus <color=green>{upgrade}</color>";
-        currentPrice = upgradeManager.GetUpgradePrice(currentUpgrade.Price, level);
-        buyText.text = $"Buy <color=green>{currentPrice}</color>";
+        string buy = "Max";
+        if (currentUpgrade.MaxLevel > level)
+        {
+            currentPrice = upgradeManager.GetUpgradePrice(currentUpgrade.Price, level);
+            buy = $"Buy <color=green>{currentPrice}</color>";
+        }
+        buyText.text = buy;
 
         for (int i = 0; i < upgradeButtons.Length; i++)
         {
             int l = playerManager.GetUpgradeLevel(upgradeButtons[i].ID);
-            int price = upgradeManager.GetUpgradePrice(upgradeButtons[i].Price, l);
-            string text = $"Lvl. {l + 1} <color=#00D3FF>{price}</color>";
+            string text = "max";
+            if (l < upgradeButtons[i].MaxLevel)
+            {
+                int price = upgradeManager.GetUpgradePrice(upgradeButtons[i].Price, l);
+                text = $"Lvl. {l + 1} <color=#00D3FF>{price}</color>";
+            }
             upgradeButtons[i].UpdateItem(text);
         }
     }
@@ -77,6 +97,11 @@ public class UpgradePanel : MonoBehaviour
     }
     private void Upgrade()
     {
+        int l = playerManager.GetUpgradeLevel(currentUpgrade.ID);
+        if (l >= currentUpgrade.MaxLevel)
+        {
+            return;
+        }
         if (playerManager.SpendExp(currentPrice))
         {
             playerManager.Upgrade(currentUpgrade.ID);

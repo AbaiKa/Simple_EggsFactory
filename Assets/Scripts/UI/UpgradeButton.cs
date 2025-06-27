@@ -11,6 +11,8 @@ public class UpgradeButton : MonoBehaviour
     [field: SerializeField]
     public int Value { get; private set; }
     [field: SerializeField]
+    public int MaxLevel { get; private set; }
+    [field: SerializeField]
     public int Price { get; private set; }
     [field: SerializeField, TextArea()]
     public string Description { get; private set; }

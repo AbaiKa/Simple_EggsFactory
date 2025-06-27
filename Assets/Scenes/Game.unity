@@ -743,6 +743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: coin_add
   <Value>k__BackingField: 10
+  <MaxLevel>k__BackingField: 9
   <Price>k__BackingField: 8
   <Description>k__BackingField: +10% profit from egg sales
   buttonComponent: {fileID: 121217392}
@@ -1565,6 +1566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: double_coins
   <Value>k__BackingField: 3
+  <MaxLevel>k__BackingField: 32
   <Price>k__BackingField: 6
   <Description>k__BackingField: "Chance to earn 2\xD7 from egg sales"
   buttonComponent: {fileID: 185310519}
@@ -2462,6 +2464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: double_eggs_buy
   <Value>k__BackingField: 3
+  <MaxLevel>k__BackingField: 32
   <Price>k__BackingField: 6
   <Description>k__BackingField: 3% chance to get double egg purchase
   buttonComponent: {fileID: 286605514}
@@ -2716,10 +2719,10 @@ RectTransform:
   - {fileID: 1739809723}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -220}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &327282925
 MonoBehaviour:
@@ -5835,10 +5838,10 @@ RectTransform:
   - {fileID: 146830842}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -460}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &600490031
 MonoBehaviour:
@@ -7209,6 +7212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: cost_minus
   <Value>k__BackingField: 3
+  <MaxLevel>k__BackingField: 32
   <Price>k__BackingField: 8
   <Description>k__BackingField: Reduce purchase cost by 3%
   buttonComponent: {fileID: 738527207}
@@ -7825,10 +7829,10 @@ RectTransform:
   - {fileID: 410047868}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -1060}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800488220
 MonoBehaviour:
@@ -8510,10 +8514,10 @@ RectTransform:
   - {fileID: 398287201}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -580}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861011382
 MonoBehaviour:
@@ -8870,6 +8874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: platform
   <Value>k__BackingField: 1
+  <MaxLevel>k__BackingField: 4
   <Price>k__BackingField: 6
   <Description>k__BackingField: Gain +1 conveyor for faster production
   buttonComponent: {fileID: 886016083}
@@ -10670,6 +10675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: platform_something
   <Value>k__BackingField: 3
+  <MaxLevel>k__BackingField: 32
   <Price>k__BackingField: 5
   <Description>k__BackingField: 3% chance to boost egg spawn rate
   buttonComponent: {fileID: 1159158816}
@@ -11121,10 +11127,10 @@ RectTransform:
   - {fileID: 2019210454}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -820}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1192998877
 MonoBehaviour:
@@ -11208,10 +11214,10 @@ RectTransform:
   - {fileID: 881743234}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -940}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198978612
 MonoBehaviour:
@@ -11295,10 +11301,10 @@ RectTransform:
   - {fileID: 2062729783}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -700}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1199863852
 MonoBehaviour:
@@ -11382,10 +11388,10 @@ RectTransform:
   - {fileID: 1804291638}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -340}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1205796506
 MonoBehaviour:
@@ -11880,6 +11886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: platform_bonus
   <Value>k__BackingField: 3
+  <MaxLevel>k__BackingField: 32
   <Price>k__BackingField: 10
   <Description>k__BackingField: "3% chance to gain 2\xD7 XP"
   buttonComponent: {fileID: 1241760154}
@@ -12098,6 +12105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: double_eggs_spawn
   <Value>k__BackingField: 3
+  <MaxLevel>k__BackingField: 32
   <Price>k__BackingField: 7
   <Description>k__BackingField: 3% chance to spawn 2 eggs at once
   buttonComponent: {fileID: 1270563140}
@@ -12866,6 +12874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ID>k__BackingField: exp_add
   <Value>k__BackingField: 10
+  <MaxLevel>k__BackingField: 9
   <Price>k__BackingField: 4
   <Description>k__BackingField: Egg gathering grants +10% more XP
   buttonComponent: {fileID: 1429715871}
@@ -16833,10 +16842,10 @@ RectTransform:
   - {fileID: 1514689301}
   m_Father: {fileID: 1501371534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 210, y: -100}
+  m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806754625
 MonoBehaviour:

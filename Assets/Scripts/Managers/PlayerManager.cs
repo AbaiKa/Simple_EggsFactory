@@ -11,15 +11,18 @@ public class PlayerManager : MonoBehaviour
     private int money;
     private int exp;
     private Dictionary<string, int> upgrades = new Dictionary<string, int>();
+
+    private UpgradeManager upgradeManager;
     public void Init()
     {
         exp = 0;
         money = 0;
+        upgradeManager = FindAnyObjectByType<UpgradeManager>();
     }
     public int GetExp() => exp;
     public void AddExp(int amount)
     {
-        exp += amount;
+        exp += upgradeManager.EvaluateExp(amount);
         onExpChanged?.Invoke(exp);
     }
     public bool SpendExp(int amount)
@@ -35,7 +38,7 @@ public class PlayerManager : MonoBehaviour
     public int GetMoney() => money;
     public void AddMoney(int amount)
     {
-        money += amount;
+        money += upgradeManager.EvaluateMoney(amount);
         onMoneyChanged?.Invoke(money);
     }
     public bool SpendMoney(int price)

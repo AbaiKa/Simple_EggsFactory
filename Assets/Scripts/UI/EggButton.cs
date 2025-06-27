@@ -54,8 +54,12 @@ public class EggButton : MonoBehaviour
         elapsedTime += Time.deltaTime;
         if (elapsedTime > interval)
         {
-            elapsedTime = 0;
+            elapsedTime = upgrade.IsEggSpeed() ? interval / 2f : 0;
             egg.Spawn(id, EggStatus.Whole, income, exp);
+            if (upgrade.IsDoubleEggs())
+            {
+                egg.Spawn(id, EggStatus.Whole, income, exp);
+            }
         }
 
         progressBar.fillAmount = elapsedTime / interval;
@@ -92,6 +96,13 @@ public class EggButton : MonoBehaviour
             player.Upgrade(id);
             UpdateValues();
             UpdatePrice(player.GetMoney());
+            if (upgrade.IsDoubleUpgrade())
+            {
+                onBuy?.Invoke();
+                player.Upgrade(id);
+                UpdateValues();
+                UpdatePrice(player.GetMoney());
+            }
         }
     }
 }
