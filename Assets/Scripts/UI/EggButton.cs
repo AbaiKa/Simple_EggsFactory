@@ -31,6 +31,7 @@ public class EggButton : MonoBehaviour
     private EggManager egg;
     private UpgradeManager upgrade;
     private PlayerManager player;
+    private AudioManager audioManager;
     public void Init(EggManager egg, UpgradeManager upgrade, PlayerManager player)
     {
         IsEnabled = false;
@@ -38,6 +39,7 @@ public class EggButton : MonoBehaviour
         this.egg = egg;
         this.upgrade = upgrade;
         this.player = player;
+        audioManager = FindFirstObjectByType<AudioManager>();
 
         buttonComponent.onClick.AddListener(OnClick);
         player.onMoneyChanged.AddListener(UpdatePrice);
@@ -104,5 +106,7 @@ public class EggButton : MonoBehaviour
                 UpdatePrice(player.GetMoney());
             }
         }
+
+        audioManager.PlaySound("click");
     }
 }

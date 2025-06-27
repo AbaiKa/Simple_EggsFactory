@@ -9,9 +9,11 @@ public class EggManager : MonoBehaviour
     [SerializeField] private Vector2 defaultSpawnPoint;
 
     private Dictionary<string, EggComponent> eggs = new Dictionary<string, EggComponent>();
-
+    private MainMenuPanel mainMenuPanel;
     public void Init()
     {
+        mainMenuPanel = FindFirstObjectByType<MainMenuPanel>();
+
         for (int i = 0; i < prefabs.Length; i++)
         {
             if (!eggs.ContainsKey(prefabs[i].ID))
@@ -33,7 +35,10 @@ public class EggManager : MonoBehaviour
         if (eggs.ContainsKey(id))
         {
             var egg = Spawn(eggs[id], status, cost, exp);
-            egg.transform.position = position;
+            if (egg != null)
+            {
+                egg.transform.position = position;
+            }
         }
     }
     public void Spawn(string id, EggStatus status, int cost, int exp, Vector2 position, int count)
@@ -46,16 +51,24 @@ public class EggManager : MonoBehaviour
             for (int i = 0; i < count; i++)
             {
                 var egg = Spawn(eggs[id], status, cost, exp);
-                float x = startX + i * offset;
-                egg.transform.position = new Vector3(x, position.y, 0f);
+                if (egg != null)
+                {
+                    float x = startX + i * offset;
+                    egg.transform.position = new Vector3(x, position.y, 0f);
+                }
             }
         }
     }
     private EggComponent Spawn(EggComponent prefab, EggStatus status, int cost, int exp)
     {
-        var egg = Instantiate(prefab);
-        egg.Init(status, cost, exp);
-        return egg;
+        if (!mainMenuPanel.InMenu)
+        {
+            var egg = Instantiate(prefab);
+            egg.Init(status, cost, exp);
+            return egg;
+        }
+
+        return null;
     }
 
     private void OnDrawGizmosSelected()

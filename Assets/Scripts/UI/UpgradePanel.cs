@@ -19,6 +19,7 @@ public class UpgradePanel : MonoBehaviour
     private PlayerManager playerManager;
     private UpgradeManager upgradeManager;
     private PlatformManager platformManager;
+    private AudioManager audioManager;
 
     private int currentPrice;
     private UpgradeButton currentUpgrade;
@@ -27,6 +28,7 @@ public class UpgradePanel : MonoBehaviour
         playerManager = player;
         upgradeManager = upgrade;
         platformManager = FindFirstObjectByType<PlatformManager>();
+        audioManager = FindFirstObjectByType<AudioManager>();
 
         showButton.onClick.AddListener(Show);
         hideButton.onClick.AddListener(Hide);
@@ -55,7 +57,7 @@ public class UpgradePanel : MonoBehaviour
     {
         currentUpgrade = upgrade;
         UpdateDescription();
-
+        audioManager.PlaySound("click");
     }
     private void UpdateDescription()
     {
@@ -90,10 +92,12 @@ public class UpgradePanel : MonoBehaviour
         levelText.text = $"Level {playerManager.GetUpgradeLevel("upgrade") + 1}";
         expText.text = $"Points {playerManager.GetExp()}";
         UpdateDescription();
+        audioManager.PlaySound("click");
     }
     private void Hide()
     {
         panel.SetActive(false);
+        audioManager.PlaySound("click");
     }
     private void Upgrade()
     {
@@ -109,6 +113,7 @@ public class UpgradePanel : MonoBehaviour
             UpdateDescription();
             expText.text = $"Points {playerManager.GetExp()}";
         }
+        audioManager.PlaySound("click");
     }
 
     private void SwitchUpgrade(string id)
