@@ -24,6 +24,10 @@ public class PlatformManager : MonoBehaviour
         }
 
         Spawn(defaultPlatform);
+        SpawnNext();
+        SpawnNext();
+        SpawnNext();
+        SpawnNext();
     }
     public void SpawnNext()
     {
