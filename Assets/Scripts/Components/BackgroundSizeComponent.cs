@@ -12,7 +12,7 @@ public class BackgroundSizeComponent : MonoBehaviour
 
         Vector3 scale = transform.localScale;
         scale.x = worldScreenWidth / spriteSize.x;
-        scale.y = scale.x;
+        scale.y = worldScreenHeight / spriteSize.y;
         transform.localScale = scale;
     }
 }

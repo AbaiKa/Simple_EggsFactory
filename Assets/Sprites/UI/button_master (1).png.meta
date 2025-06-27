@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f299bce58584b3842aff2d0a12ea24be
+guid: dd7f3e5a7fdaa124796393e83d8d4f88
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1937561181017713802
-    second: Background 4_0
+      213: 6929161735761388686
+    second: button_master (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background 4_0
+      name: button_master (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2400
-        height: 2400
+        width: 121
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6735ada1f566c15e0800000000000000
-      internalID: -1937561181017713802
+      spriteID: e84694be2e3592060800000000000000
+      internalID: 6929161735761388686
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Background 4_0: -1937561181017713802
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
