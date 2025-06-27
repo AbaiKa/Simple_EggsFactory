@@ -5399,7 +5399,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 501705540}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1443325205}
+        m_TargetAssemblyTypeName: SettingsPanel, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &501705540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8990,6 +9002,7 @@ MonoBehaviour:
   expText: {fileID: 1182216005}
   upgradeButton: {fileID: 1466548409}
   upgradePanel: {fileID: 930097802}
+  settingsPanel: {fileID: 1443325205}
   eggButtons:
   - {fileID: 1806754626}
   - {fileID: 327282926}
@@ -9000,6 +9013,8 @@ MonoBehaviour:
   - {fileID: 1192998878}
   - {fileID: 1198978613}
   - {fileID: 800488221}
+  defaultMusic: 0.6
+  defaultSound: 0.4
 --- !u!4 &846552833
 Transform:
   m_ObjectHideFlags: 0
@@ -9014,6 +9029,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 930097801}
+  - {fileID: 1443325204}
   m_Father: {fileID: 446095669}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &847029886
@@ -14920,6 +14936,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436801314}
   m_CullTransparentMesh: 1
+--- !u!1 &1443325203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443325204}
+  - component: {fileID: 1443325205}
+  m_Layer: 0
+  m_Name: SettingsPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443325204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443325203}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 846552833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1443325205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443325203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6558b9d856d86fb4895a2c696ac33a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 180542171}
+  musicSlider: {fileID: 919688929}
+  soundSlider: {fileID: 2010245535}
+  deleteSaveButton: {fileID: 112883990}
+  cancelButton: {fileID: 410051390}
+  onMusicChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onSoundChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1451530835
 GameObject:
   m_ObjectHideFlags: 0

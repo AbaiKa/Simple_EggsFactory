@@ -9,7 +9,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI expText;
     [SerializeField] private Button upgradeButton;
     [SerializeField] private UpgradePanel upgradePanel;
+    [SerializeField] private SettingsPanel settingsPanel;
     [SerializeField] private EggButton[] eggButtons;
+    [SerializeField, Range(0, 1)] private float defaultMusic;
+    [SerializeField, Range(0, 1)] private float defaultSound;
 
     private EggManager eggManager;
     private PlayerManager playerManager;
@@ -28,6 +31,7 @@ public class UIManager : MonoBehaviour
         }
 
         upgradePanel.Init(playerManager, upgradeManager);
+        settingsPanel.Init(defaultMusic, defaultSound);
 
         playerManager.onMoneyChanged.AddListener(UpdateCoins);
         upgradeManager.onExpChanged.AddListener(UpdateExp);
